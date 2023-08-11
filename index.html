@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/medias.css" />
+    <script src="js/script.js"></script>
+    <title>Calculadora Tempo de Vida</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-content">
+        <h1>Calculadora de Idade</h1>
+        <label for="dia">Dia</label>
+        <input type="number" id="dia" min="1" max="31" placeholder="25" />
+        <span class="edit" id="errodia"></span>
+
+        <label for="mes">Mês</label>
+        <input type="number" id="mes" min="1" max="12" placeholder="12" />
+        <span class="edit" id="erromes"></span>
+
+        <label for="ano">Anos</label>
+        <input type="number" id="ano" min="1900" placeholder="2001" />
+        <span class="edit" id="erroano"></span>
+        <div>
+          <button onclick="calculateAge()">Calcular</button>
+          <button onclick="resetarButton()">Limpar</button>
+        </div>
+        <span></span>
+      </div>
+
+      <div class="conteiner-mostrador">
+        <p>
+          <span id="anos">- -</span> <br />
+          <span id="meses">- -</span> <br />
+          <span id="dias">- -</span>
+        </p>
+        <h5>-- &copy; Luis Fabiano Junior --</h5>
+      </div>
+    </div>
+  </body>
+</html>
